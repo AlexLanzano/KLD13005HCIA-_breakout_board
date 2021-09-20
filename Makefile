@@ -1,5 +1,5 @@
-BOARD_PCB_FILE = kicad/KLD13005HCIA_breakout_board.kicad_pcb
-BOARD_OUTPUT = $(PWD)/kicad/
+BOARD_PCB_FILE = kicad/KLD13005HCIA_breakout_board/KLD13005HCIA_breakout_board.kicad_pcb
+BOARD_OUTPUT = $(PWD)/kicad/KLD13005HCIA_breakout_board
 
 .PHONY: debug-board
 debug-board:
