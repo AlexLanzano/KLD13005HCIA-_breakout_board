@@ -23,7 +23,7 @@ Text Label 1050 1450 0    50   ~ 0
 SPI_CS
 Text Label 1050 1550 0    50   ~ 0
 LCD_DC
-Text Label 1050 1950 0    50   ~ 0
+Text Label 1050 1750 0    50   ~ 0
 CAPSENS_INT
 $Comp
 L Connector:Conn_01x10_Male J1
@@ -136,7 +136,7 @@ Text Label 2400 950  0    50   ~ 0
 LEDA
 Text Label 1050 1850 0    50   ~ 0
 I2C_SDA
-Text Label 1050 1750 0    50   ~ 0
+Text Label 1050 1950 0    50   ~ 0
 I2C_SCL
 Text Label 1050 1250 0    50   ~ 0
 SPI_SCK
