@@ -358,24 +358,24 @@ Wire Wire Line
 	1000 2450 1350 2450
 Wire Wire Line
 	1000 2600 1350 2600
-Text Label 1350 2750 0    50   ~ 0
+Text Label 1100 3200 0    50   ~ 0
 SCL
-Text Label 1350 2900 0    50   ~ 0
+Text Label 1950 3200 0    50   ~ 0
 SDA
-Text Label 1350 3050 0    50   ~ 0
+Text Label 1350 2750 0    50   ~ 0
 INT
-Text Label 1000 2750 2    50   ~ 0
+Text Label 750  3200 2    50   ~ 0
 I2C_SCL
-Text Label 1000 2900 2    50   ~ 0
+Text Label 1600 3200 2    50   ~ 0
 I2C_SDA
-Text Label 1000 3050 2    50   ~ 0
+Text Label 1000 2750 2    50   ~ 0
 CAPSENS_INT
 Wire Wire Line
+	750  3200 900  3200
+Wire Wire Line
+	1600 3200 1800 3200
+Wire Wire Line
 	1000 2750 1350 2750
-Wire Wire Line
-	1000 2900 1350 2900
-Wire Wire Line
-	1000 3050 1350 3050
 $Comp
 L Connector:Conn_01x24_Male J2
 U 1 1 6146A5AD
@@ -453,4 +453,54 @@ Wire Wire Line
 Connection ~ 2800 3250
 Wire Wire Line
 	2800 3250 2800 3300
+$Comp
+L Device:R_Small R4
+U 1 1 61C007E4
+P 900 3100
+F 0 "R4" H 959 3146 50  0000 L CNN
+F 1 "10K" H 959 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 900 3100 50  0001 C CNN
+F 3 "~" H 900 3100 50  0001 C CNN
+	1    900  3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 900  3200
+Wire Wire Line
+	900  3200 1100 3200
+$Comp
+L Device:R_Small R5
+U 1 1 61C00E6A
+P 1800 3100
+F 0 "R5" H 1859 3146 50  0000 L CNN
+F 1 "10K" H 1859 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 3100 50  0001 C CNN
+F 3 "~" H 1800 3100 50  0001 C CNN
+	1    1800 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 3200
+Wire Wire Line
+	1800 3200 1950 3200
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 61C01D1E
+P 900 3000
+F 0 "#PWR0101" H 900 2850 50  0001 C CNN
+F 1 "+3.3V" H 915 3173 50  0000 C CNN
+F 2 "" H 900 3000 50  0001 C CNN
+F 3 "" H 900 3000 50  0001 C CNN
+	1    900  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 61C0258F
+P 1800 3000
+F 0 "#PWR0102" H 1800 2850 50  0001 C CNN
+F 1 "+3.3V" H 1815 3173 50  0000 C CNN
+F 2 "" H 1800 3000 50  0001 C CNN
+F 3 "" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
